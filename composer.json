@@ -1,0 +1,60 @@
+{
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/tmp/opentelemetry-php-contrib/src/Instrumentation/Slim",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "/tmp/opentelemetry-php-contrib/src/Instrumentation/Psr15",
+            "options": {
+                "symlink": false
+            }        
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "guzzlehttp/psr7": "2.4.x-dev",
+        "monolog/monolog": "^2.8",
+        "open-telemetry/api": "dev-main",
+        "open-telemetry/opentelemetry-auto-slim": "@dev",
+        "open-telemetry/opentelemetry-auto-psr15": "@dev",
+        "open-telemetry/sdk-contrib": "dev-main",
+        "php-di/php-di": "^6.4",
+        "php-http/curl-client": "2.x-dev",
+        "php-http/discovery": "^1.14",
+        "php-http/message": "^1.13",
+        "symfony/http-client": "6.2.x-dev"
+    },
+    "require-dev": {
+        "jangregor/phpstan-prophecy": "^1.0.0",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/extension-installer": "^1.1.0",
+        "phpstan/phpstan": "^1.8",
+        "phpunit/phpunit": "^9.5.25",
+        "squizlabs/php_codesniffer": "^3.7",
+        "open-telemetry/sdk": "dev-main"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        },
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
