@@ -31,6 +31,7 @@
         "open-telemetry/api": "dev-main",
         "open-telemetry/opentelemetry-auto-slim": "@dev",
         "open-telemetry/opentelemetry-auto-psr15": "@dev",
+        "open-telemetry/opentelemetry-auto-generated": "@dev",
         "open-telemetry/sdk-contrib": "dev-main",
         "php-di/php-di": "^6.4",
         "php-http/curl-client": "2.x-dev",
