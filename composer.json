@@ -50,11 +50,13 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/"
-        }
+        },
+        "files": ["instrumentation-loader.php"]
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+	"files": ["instrumentation-loader.php"]
     }
 }
